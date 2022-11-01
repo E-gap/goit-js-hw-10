@@ -37,8 +37,8 @@ enter.addEventListener('input', debounce((e) => {
             
             for (flag of countryFlags) {
   
-                flag.style.width = "40px"
-                flag.style.height = "40px"
+                flag.style.width = "40px";
+                flag.style.height = "40px";
                 
                 }  
                 
