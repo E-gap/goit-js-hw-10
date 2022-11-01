@@ -35,22 +35,21 @@ enter.addEventListener('input', debounce((e) => {
                 const countryFlags = document.querySelectorAll('.country-flag');
                 const countryNames = document.querySelectorAll('.country-name');
 
-                console.log(countryFlags);
-                console.log(countryNames);
+                
 
             
-            /* for (flag of countryFlags) {
+            for (const flag of countryFlags) {
   
                 flag.style.width = "40px";
                 flag.style.height = "40px";
                 
                 }  
                 
-                for (countryName of countryNames) {
+                for (const countryName of countryNames) {
   
                 countryName.style.fontSize = "40px";
                 countryName.style.color = "green"; 
-                };           */
+                };          
 }                
     else {
                 const data = array[0].languages;                 
