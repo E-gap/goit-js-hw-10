@@ -21,7 +21,6 @@ enter.addEventListener('input', debounce((e) => {
     countryInfo.innerHTML = "";
     countryList.innerHTML = "";
 
-
         
         fetchCountries(value).then(array => {
             if (array.length > 10) {
@@ -31,7 +30,7 @@ enter.addEventListener('input', debounce((e) => {
                 console.log(array)
                 const template = array.map(arr => `<li> <img src="${arr.flags.svg}" class="country-flag"/> 
                 <span class="country-name">${arr.name}</span> </li>`).join('')
-                console.log(template)                
+                               
                 countryList.innerHTML = template; 
                 const countryFlags = document.querySelectorAll('.country-flag');
                 const countryNames = document.querySelectorAll('.country-name');
@@ -67,7 +66,6 @@ enter.addEventListener('input', debounce((e) => {
                 countryFlag.style.width = "40px"
                 countryFlag.style.height = "40px"
     }          
-
 
         }
     )
