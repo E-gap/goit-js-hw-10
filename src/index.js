@@ -26,7 +26,7 @@ enter.addEventListener('input', debounce((e) => {
             if (array.length > 10) {
             Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
             }
-            else if (/* array.length > 1 && */ array.length <= 10) {
+            else if (array.length > 1 && array.length <= 10) {
                 console.log(array)
                 const template = array.map(arr => `<li> <img src="${arr.flags.svg}" class="country-flag"/> 
                 <span class="country-name">${arr.name}</span> </li>`).join('')
@@ -34,8 +34,12 @@ enter.addEventListener('input', debounce((e) => {
                 countryList.innerHTML = template; 
                 const countryFlags = document.querySelectorAll('.country-flag');
                 const countryNames = document.querySelectorAll('.country-name');
+
+                console.log(countryFlags);
+                console.log(countryNames);
+
             
-            for (flag of countryFlags) {
+            /* for (flag of countryFlags) {
   
                 flag.style.width = "40px";
                 flag.style.height = "40px";
@@ -46,9 +50,9 @@ enter.addEventListener('input', debounce((e) => {
   
                 countryName.style.fontSize = "40px";
                 countryName.style.color = "green"; 
-                };          
+                };           */
 }                
-    /* else {
+    else {
                 const data = array[0].languages;                 
                 const lang = data.map((el) => el.name).join(', ')             
                 
@@ -65,7 +69,7 @@ enter.addEventListener('input', debounce((e) => {
                 countryName.style.color = "green"; 
                 countryFlag.style.width = "40px"
                 countryFlag.style.height = "40px"
-    }           */
+    }          
 
         }
     )
