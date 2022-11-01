@@ -26,7 +26,7 @@ enter.addEventListener('input', debounce((e) => {
             if (array.length > 10) {
             Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
             }
-            else if (array.length > 1 & array.length <= 10) {
+            else if (array.length > 1 && array.length <= 10) {
                 console.log(array)
                 const template = array.map(arr => `<li> <img src="${arr.flags.svg}" class="country-flag"/> 
                 <span class="country-name">${arr.name}</span> </li>`).join('')
