@@ -48,7 +48,7 @@ enter.addEventListener('input', debounce((e) => {
                 countryName.style.color = "green"; 
                 };          
 }                
-    else {
+    /* else {
                 const data = array[0].languages;                 
                 const lang = data.map((el) => el.name).join(', ')             
                 
@@ -65,7 +65,7 @@ enter.addEventListener('input', debounce((e) => {
                 countryName.style.color = "green"; 
                 countryFlag.style.width = "40px"
                 countryFlag.style.height = "40px"
-    }          
+    }           */
 
         }
     )
